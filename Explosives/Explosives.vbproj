@@ -1,0 +1,713 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3AD28521-ACA9-4D25-AB91-7A1E16715E7A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Explosives.My.MyApplication</StartupObject>
+    <RootNamespace>Explosives</RootNamespace>
+    <AssemblyName>Explosives</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Explosives.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Explosives.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>bomb1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Explosives, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <ExecutableExtension>.exe</ExecutableExtension>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Word, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.4.1\lib\net40\QRCoder.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Documents\frmPrintAmmo.Designer.vb">
+      <DependentUpon>frmPrintAmmo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\frmPrintAmmo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\frmPrintFinance.Designer.vb">
+      <DependentUpon>frmPrintFinance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\frmPrintFinance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\frmPrintFireworksStore.Designer.vb">
+      <DependentUpon>frmPrintFireworksStore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\frmPrintFireworksStore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\frmPrintFireworkSell.Designer.vb">
+      <DependentUpon>frmPrintFireworkSell.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\frmPrintFireworkSell.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\frmPrintFuelStationFirst.Designer.vb">
+      <DependentUpon>frmPrintFuelStationFirst.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\frmPrintFuelStationFirst.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\frmPrintFuelStationSecond.Designer.vb">
+      <DependentUpon>frmPrintFuelStationSecond.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\frmPrintFuelStationSecond.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\frmPrintGasCenter.Designer.vb">
+      <DependentUpon>frmPrintGasCenter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\frmPrintGasCenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\frmPrintGasDepot.Designer.vb">
+      <DependentUpon>frmPrintGasDepot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\frmPrintGasDepot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\frmPrintGasDepotSecond.Designer.vb">
+      <DependentUpon>frmPrintGasDepotSecond.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\frmPrintGasDepotSecond.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\frmPrintImportPermission.Designer.vb">
+      <DependentUpon>frmPrintImportPermission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\frmPrintImportPermission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\frmPrintMovementForm.Designer.vb">
+      <DependentUpon>frmPrintMovementForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\frmPrintMovementForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\frmPrintNoObjection.Designer.vb">
+      <DependentUpon>frmPrintNoObjection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\frmPrintNoObjection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\frmprintPassPermission.Designer.vb">
+      <DependentUpon>frmprintPassPermission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\frmprintPassPermission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\frmPrintWorkPermission.Designer.vb">
+      <DependentUpon>frmPrintWorkPermission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\frmPrintWorkPermission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dsExplosives.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsExplosives.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsExplosives.vb">
+      <DependentUpon>dsExplosives.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccounts.Designer.vb">
+      <DependentUpon>frmAccounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAccounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAmmo.Designer.vb">
+      <DependentUpon>frmAmmo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAmmo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBalance.Designer.vb">
+      <DependentUpon>frmBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheck.Designer.vb">
+      <DependentUpon>frmCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckFinance.Designer.vb">
+      <DependentUpon>frmCheckFinance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckFinance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckImportConditions.Designer.vb">
+      <DependentUpon>frmCheckImportConditions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckImportConditions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckNoObjections.Designer.vb">
+      <DependentUpon>frmCheckNoObjections.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckNoObjections.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckWork.Designer.vb">
+      <DependentUpon>frmCheckWork.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckWork.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClasses.Designer.vb">
+      <DependentUpon>frmClasses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClasses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCondtions0.Designer.vb">
+      <DependentUpon>frmCondtions0.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCondtions0.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatabaseSettings.Designer.vb">
+      <DependentUpon>frmDatabaseSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatabaseSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDelegates.Designer.vb">
+      <DependentUpon>frmDelegates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDelegates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFinance.Designer.vb">
+      <DependentUpon>frmFinance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFinance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFireworks.Designer.vb">
+      <DependentUpon>frmFireworks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFireworks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFireworksRequests.Designer.vb">
+      <DependentUpon>frmFireworksRequests.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFireworksRequests.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFuelStation.Designer.vb">
+      <DependentUpon>frmFuelStation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFuelStation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGasCenter.Designer.vb">
+      <DependentUpon>frmGasCenter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGasCenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGasDepot.Designer.vb">
+      <DependentUpon>frmGasDepot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGasDepot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGetPass.Designer.vb">
+      <DependentUpon>frmGetPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGetPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportAllowed.Designer.vb">
+      <DependentUpon>frmImportAllowed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportAllowed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportPermissions.Designer.vb">
+      <DependentUpon>frmImportPermissions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportPermissions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsert.Designer.vb">
+      <DependentUpon>frmInsert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConditions.Designer.vb">
+      <DependentUpon>frmConditions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConditions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovementForms.Designer.vb">
+      <DependentUpon>frmMovementForms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovementForms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNoObjections.Designer.vb">
+      <DependentUpon>frmNoObjections.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNoObjections.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOurDistract.Designer.vb">
+      <DependentUpon>frmOurDistract.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOurDistract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOurImport.Designer.vb">
+      <DependentUpon>frmOurImport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOurImport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOurRecent.Designer.vb">
+      <DependentUpon>frmOurRecent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOurRecent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOurRecentDistract.Designer.vb">
+      <DependentUpon>frmOurRecentDistract.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOurRecentDistract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassCopies.Designer.vb">
+      <DependentUpon>frmPassCopies.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassCopies.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassWords.Designer.vb">
+      <DependentUpon>frmPassWords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassWords.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassPermissions.Designer.vb">
+      <DependentUpon>frmPassPermissions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassPermissions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPermissionsCopies.Designer.vb">
+      <DependentUpon>frmPermissionsCopies.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPermissionsCopies.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchImportPermission.Designer.vb">
+      <DependentUpon>frmSearchImportPermission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchImportPermission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchOurDistract.Designer.vb">
+      <DependentUpon>frmSearchOurDistract.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchOurDistract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchPassPermission.Designer.vb">
+      <DependentUpon>frmSearchPassPermission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchPassPermission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTeams.Designer.vb">
+      <DependentUpon>frmTeams.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTeams.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWorkAllowed.Designer.vb">
+      <DependentUpon>frmWorkAllowed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWorkAllowed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWorkCopies.Designer.vb">
+      <DependentUpon>frmWorkCopies.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWorkCopies.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWorkPermissions.Designer.vb">
+      <DependentUpon>frmWorkPermissions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWorkPermissions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\frmrptPassPermission.Designer.vb">
+      <DependentUpon>frmrptPassPermission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmrptPassPermission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmrptWorkPermissions.Designer.vb">
+      <DependentUpon>frmrptWorkPermissions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmrptWorkPermissions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmrptOurDistract.Designer.vb">
+      <DependentUpon>frmrptOurDistract.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmrptOurDistract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Documents\Ammo.rdlc" />
+    <EmbeddedResource Include="Documents\FinanceBill.rdlc" />
+    <EmbeddedResource Include="Documents\FireworksSell.rdlc" />
+    <EmbeddedResource Include="Documents\FireworksStore.rdlc" />
+    <EmbeddedResource Include="Documents\frmPrintAmmo.resx">
+      <DependentUpon>frmPrintAmmo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\frmPrintFinance.resx">
+      <DependentUpon>frmPrintFinance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\frmPrintFireworksStore.resx">
+      <DependentUpon>frmPrintFireworksStore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\frmPrintFireworkSell.resx">
+      <DependentUpon>frmPrintFireworkSell.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\frmPrintFuelStationFirst.resx">
+      <DependentUpon>frmPrintFuelStationFirst.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\frmPrintFuelStationSecond.resx">
+      <DependentUpon>frmPrintFuelStationSecond.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\frmPrintGasCenter.resx">
+      <DependentUpon>frmPrintGasCenter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\frmPrintGasDepot.resx">
+      <DependentUpon>frmPrintGasDepot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\frmPrintGasDepotSecond.resx">
+      <DependentUpon>frmPrintGasDepotSecond.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\frmPrintImportPermission.resx">
+      <DependentUpon>frmPrintImportPermission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\frmPrintMovementForm.resx">
+      <DependentUpon>frmPrintMovementForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\frmPrintNoObjection.resx">
+      <DependentUpon>frmPrintNoObjection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\frmprintPassPermission.resx">
+      <DependentUpon>frmprintPassPermission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\frmPrintWorkPermission.resx">
+      <DependentUpon>frmPrintWorkPermission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\FuelStationFirst.rdlc" />
+    <EmbeddedResource Include="Documents\FuelStationSecond.rdlc" />
+    <EmbeddedResource Include="Documents\GasCenter.rdlc" />
+    <EmbeddedResource Include="Documents\GasDepotFirst.rdlc" />
+    <EmbeddedResource Include="Documents\GasDepotSecond.rdlc" />
+    <EmbeddedResource Include="Documents\ImportPermission.rdlc" />
+    <EmbeddedResource Include="Documents\MovementForm.rdlc" />
+    <EmbeddedResource Include="Documents\NoObjection.rdlc" />
+    <EmbeddedResource Include="Documents\PassPermission.rdlc" />
+    <EmbeddedResource Include="Documents\WorkPermission.rdlc" />
+    <EmbeddedResource Include="frmAccounts.resx">
+      <DependentUpon>frmAccounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAmmo.resx">
+      <DependentUpon>frmAmmo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBalance.resx">
+      <DependentUpon>frmBalance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheck.resx">
+      <DependentUpon>frmCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClasses.resx">
+      <DependentUpon>frmClasses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCondtions0.resx">
+      <DependentUpon>frmCondtions0.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatabaseSettings.resx">
+      <DependentUpon>frmDatabaseSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFinance.resx">
+      <DependentUpon>frmFinance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFireworks.resx">
+      <DependentUpon>frmFireworks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFireworksRequests.resx">
+      <DependentUpon>frmFireworksRequests.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFuelStation.resx">
+      <DependentUpon>frmFuelStation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGasCenter.resx">
+      <DependentUpon>frmGasCenter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGasDepot.resx">
+      <DependentUpon>frmGasDepot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportAllowed.resx">
+      <DependentUpon>frmImportAllowed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportPermissions.resx">
+      <DependentUpon>frmImportPermissions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsert.resx">
+      <DependentUpon>frmInsert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConditions.resx">
+      <DependentUpon>frmConditions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovementForms.resx">
+      <DependentUpon>frmMovementForms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNoObjections.resx">
+      <DependentUpon>frmNoObjections.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOurDistract.resx">
+      <DependentUpon>frmOurDistract.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOurImport.resx">
+      <DependentUpon>frmOurImport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassCopies.resx">
+      <DependentUpon>frmPassCopies.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassPermissions.resx">
+      <DependentUpon>frmPassPermissions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchImportPermission.resx">
+      <DependentUpon>frmSearchImportPermission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchOurDistract.resx">
+      <DependentUpon>frmSearchOurDistract.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchPassPermission.resx">
+      <DependentUpon>frmSearchPassPermission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTeams.resx">
+      <DependentUpon>frmTeams.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWorkAllowed.resx">
+      <DependentUpon>frmWorkAllowed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWorkCopies.resx">
+      <DependentUpon>frmWorkCopies.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWorkPermissions.resx">
+      <DependentUpon>frmWorkPermissions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmrptOurDistract.resx">
+      <DependentUpon>frmrptOurDistract.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmrptPassPermission.resx">
+      <DependentUpon>frmrptPassPermission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmrptWorkPermissions.resx">
+      <DependentUpon>frmrptWorkPermissions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OurDistractSubReport.rdlc" />
+    <EmbeddedResource Include="Reports\OurDistract.rdlc" />
+    <EmbeddedResource Include="Reports\WorkPermissions.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="dsExplosives.xsc">
+      <DependentUpon>dsExplosives.xsd</DependentUpon>
+    </None>
+    <None Include="dsExplosives.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsExplosives.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dsExplosives.xss">
+      <DependentUpon>dsExplosives.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bomb1.ico" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\bombred.png" />
+    <None Include="Resources\bomb1.png" />
+    <None Include="Resources\صقر الجديان.png" />
+    <None Include="Resources\bomb.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

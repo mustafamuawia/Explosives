@@ -1,0 +1,1495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="dsExplosives">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>5ac97aa8-b01e-414e-a2d5-b07f1f450048</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="dsPassPermission">
+      <Fields>
+        <Field Name="FID">
+          <DataField>FID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PLACE">
+          <DataField>PLACE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FDATE">
+          <DataField>FDATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="LICENSEID">
+          <DataField>LICENSEID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SENDER">
+          <DataField>SENDER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SENDERADDRESS">
+          <DataField>SENDERADDRESS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RECEIVERADDRESS">
+          <DataField>RECEIVERADDRESS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="POINT1">
+          <DataField>POINT1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="POINT2">
+          <DataField>POINT2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="POINT3">
+          <DataField>POINT3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TRANSPORTEDBY">
+          <DataField>TRANSPORTEDBY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TOSTORE">
+          <DataField>TOSTORE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="STOREID">
+          <DataField>STOREID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FFROM">
+          <DataField>FFROM</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="FTO">
+          <DataField>FTO</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="STOREDATE">
+          <DataField>STOREDATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CLASS">
+          <DataField>CLASS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RECEIVER">
+          <DataField>RECEIVER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AMMOUNT">
+          <DataField>AMMOUNT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UNIT">
+          <DataField>UNIT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RANK">
+          <DataField>RANK</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NAME">
+          <DataField>NAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="POSITION">
+          <DataField>POSITION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FINANCEID">
+          <DataField>FINANCEID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FYEAR">
+          <DataField>FYEAR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PURPOSE">
+          <DataField>PURPOSE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="WORKPERMISSION">
+          <DataField>WORKPERMISSION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ID">
+          <DataField>ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="PassPermissionNo">
+          <DataField>PassPermissionNo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IsImport">
+          <DataField>IsImport</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="IsDistruct">
+          <DataField>IsDistruct</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>dsExplosives</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>dsExplosives</rd:DataSetName>
+        <rd:SchemaPath>E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\dsExplosives.xsd</rd:SchemaPath>
+        <rd:TableName>PERMISSIONS</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>PERMISSIONSTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="dsPermissionDetails">
+      <Fields>
+        <Field Name="PermissionDetailsID">
+          <DataField>PermissionDetailsID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="PermissionID">
+          <DataField>PermissionID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Unit">
+          <DataField>Unit</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Quanitity">
+          <DataField>Quanitity</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>dsExplosives</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>dsExplosives</rd:DataSetName>
+        <rd:SchemaPath>E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\dsExplosives.xsd</rd:SchemaPath>
+        <rd:TableName>PermissionDetails</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>PermissionDetailsTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="dsSirs">
+      <Fields>
+        <Field Name="PassCopySirsID">
+          <DataField>PassCopySirsID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Sirs">
+          <DataField>Sirs</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PassCopyID">
+          <DataField>PassCopyID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>dsExplosives</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>dsExplosives</rd:DataSetName>
+        <rd:SchemaPath>E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\dsExplosives.xsd</rd:SchemaPath>
+        <rd:TableName>PassCopiesDetails</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>PassCopiesDetailsTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Body>
+    <ReportItems>
+      <Image Name="Image1">
+        <Source>Embedded</Source>
+        <Value>watermark</Value>
+        <Sizing>FitProportional</Sizing>
+        <Top>1.64583in</Top>
+        <Left>2.54167in</Left>
+        <Height>3.20313in</Height>
+        <Width>4.08333in</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Image>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>جمھوریة السودان </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                  <Color>#000000</Color>
+                  <Language>ar-EG</Language>
+                  <NumeralLanguage>ar-EG</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>وزارة الدفاع - أورنیك نمرة ٣٦-/١٦٩ </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                  <Color>#000000</Color>
+                  <Language>ar-EG</Language>
+                  <NumeralLanguage>ar-EG</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>قانون الأسلحة و الذخیرة لسنة (١٩٨٦) و تعدیلاتھا</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                  <Color>#000000</Color>
+                  <Language>ar-EG</Language>
+                  <NumeralLanguage>ar-EG</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                  <Language>ar-EG</Language>
+                  <NumeralLanguage>ar-EG</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>ترخیص مرور لنقل المفرقعات </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                  <Color>#000000</Color>
+                  <Language>ar-EG</Language>
+                  <NumeralLanguage>ar-EG</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                  <Language>ar-EG</Language>
+                  <NumeralLanguage>ar-EG</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>صادر بموجب المادة (٣٢) من اللائحة العامة للمفرقعات (١٩٨٦) و تعدیلاتھا</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                  <Language>ar-EG</Language>
+                  <NumeralLanguage>ar-EG</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>نمرة الملف   (</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                  <Language>ar-EG</Language>
+                  <NumeralLanguage>ar-EG</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Code.ToArabicNumber(First(Fields!PassPermissionNo.Value, "dsPassPermission"))</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                  <Language>ar-EG</Language>
+                  <NumeralLanguage>ar-EG</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>)                                                                                                  </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                  <Language>ar-EG</Language>
+                  <NumeralLanguage>ar-EG</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                  <Language>ar-EG</Language>
+                  <NumeralLanguage>ar-EG</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>موصفات المفرقعات المرخص بنقلها:</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                  <Language>ar-EG</Language>
+                  <NumeralLanguage>ar-EG</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                  <Language>ar-EG</Language>
+                  <NumeralLanguage>ar-EG</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Left>1.27cm</Left>
+        <Height>1.64583in</Height>
+        <Width>7.02083in</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>الشروط </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>١- یخضع ھذا الترخیص لأحكام الأسلحة و الذخیرة و بالشروط المبینة أدناه :-</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>٢- یصبح ھذا التصريح لاغیا إذا تجاوز نقل المفرقعات المبینة و إذا خزنت المفرقعات قبل الوصول إلى المحل المقصود و إذا نقلت المواد على خط سیر مخالف .</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>٣- یجب تقدیم ھذا الترخیص إلى الجھات الموضحة أدناه ، و المواد تكون معدة لغرض   </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!PURPOSE.Value, "dsPassPermission")</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>3.13541in</Top>
+        <Left>1.27cm</Left>
+        <Height>0.84375in</Height>
+        <Width>7.02083in</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox3">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value xml:space="preserve">  </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!RANK.Value, "dsPassPermission")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve">  </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!NAME.Value, "dsPassPermission")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve">  </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!POSITION.Value, "dsPassPermission")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve">  </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>4.51389in</Top>
+        <Height>0.55209in</Height>
+        <Width>2.30209in</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox4">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>صورة إلى:</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox4</rd:DefaultName>
+        <Top>5.55208in</Top>
+        <Left>6.25in</Left>
+        <Height>0.25in</Height>
+        <Width>1.25in</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Tablix Name="tblDistruct">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>2.91667in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.19791in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.08333in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.19792in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Description">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value xml:space="preserve">   </Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value>=IIF(Fields!Description.Value="حاوية",Fields!Unit.Value,Fields!Description.Value)</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value xml:space="preserve">   </Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Description</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Unit">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=IIF(Fields!Description.Value="حاوية",Fields!Description.Value,Fields!Unit.Value)</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Unit</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Quanitity">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Code.ToArabicNumber(System.Convert.ToInt32(Fields!Quanitity.Value))</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Quanitity</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="Details" />
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>dsPermissionDetails</DataSetName>
+        <Top>1.44791in</Top>
+        <Left>0.73625in</Left>
+        <Height>0.19792in</Height>
+        <Width>5.19791in</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+      <Textbox Name="Textbox11">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value> اسم وعنوان المرسل منه:</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontSize>3pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value> اسم وعنوان المرسل إليه:</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontSize>3pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value> المفرقعات السابق ذكرها منقولة للتخزين في:</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontSize>3pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value> نمرة رخصة الخزنة وتاريخها:</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>1.65292in</Top>
+        <Left>3.58in</Left>
+        <Height>0.85208in</Height>
+        <Width>3.94083in</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox12">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>خط السير: </Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>يسري مفعول هذا الترخيص من:    </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Code.ToArabicNumber(System.Convert.ToDateTime(First(Fields!FFROM.Value, "dsPassPermission")).ToString("yyyy/MM/dd"))</Value>
+                <Style>
+                  <Format>yyyy/MM/dd</Format>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> م                    إلى:</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Code.ToArabicNumber(System.Convert.ToDateTime(First(Fields!FTO.Value, "dsPassPermission")).ToString("yyyy/MM/dd"))</Value>
+                <Style>
+                  <Format>yyyy/MM/dd</Format>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> م</Value>
+                <Style>
+                  <Format>yyyy/MM/dd</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>2.59375in</Top>
+        <Left>1.08in</Left>
+        <Height>0.54166in</Height>
+        <Width>6.44083in</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox14">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value xml:space="preserve">  </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!SENDER.Value, "dsPassPermission")+" - "+First(Fields!SENDERADDRESS.Value, "dsPassPermission")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox14</rd:DefaultName>
+        <Top>1.64583in</Top>
+        <Height>0.2in</Height>
+        <Width>5.60083in</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>0cm</PaddingLeft>
+          <PaddingRight>0cm</PaddingRight>
+          <PaddingTop>0cm</PaddingTop>
+          <PaddingBottom>0cm</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox15">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value xml:space="preserve">  </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!RECEIVER.Value, "dsPassPermission")+" - "+First(Fields!RECEIVERADDRESS.Value, "dsPassPermission")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve">  </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox14</rd:DefaultName>
+        <Top>1.846in</Top>
+        <Left>1.27cm</Left>
+        <Height>0.25in</Height>
+        <Width>5.12167in</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox16">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!TOSTORE.Value, "dsPassPermission")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve">  </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox14</rd:DefaultName>
+        <Top>2.075in</Top>
+        <Left>1.27cm</Left>
+        <Height>0.25in</Height>
+        <Width>4.35083in</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>0cm</PaddingLeft>
+          <PaddingRight>0cm</PaddingRight>
+          <PaddingTop>0cm</PaddingTop>
+          <PaddingBottom>0cm</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox17">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value xml:space="preserve">  </Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Code.ToArabicNumber(
+IIF(
+First(
+Fields!STOREID.Value, "dsPassPermission"
+)
+= Nothing, 
+"",First(
+Fields!STOREID.Value, "dsPassPermission"
+)))</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>   -   </Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Code.ToArabicNumber(System.Convert.ToDateTime(First(Fields!STOREDATE.Value, "dsPassPermission")).ToString("yyyy/MM/dd"))</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                  <Format>yyyy/MM/dd</Format>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>م</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                  <Format>yyyy/MM/dd</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox14</rd:DefaultName>
+        <Top>2.255in</Top>
+        <Left>0.705in</Left>
+        <Height>0.25in</Height>
+        <Width>4.35083in</Width>
+        <ZIndex>11</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>0cm</PaddingLeft>
+          <PaddingRight>0cm</PaddingRight>
+          <PaddingTop>0cm</PaddingTop>
+          <PaddingBottom>0cm</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox18">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!POINT1.Value, "dsPassPermission")+" - "+First(Fields!POINT2.Value, "dsPassPermission")+" - "+First(Fields!POINT3.Value, "dsPassPermission")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox18</rd:DefaultName>
+        <Top>2.59375in</Top>
+        <Height>0.25in</Height>
+        <Width>6.10083in</Width>
+        <ZIndex>12</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox19">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=System.Convert.ToDateTime(First(Fields!FDATE.Value, "dsPassPermission")).Year</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <Language>ar-EG</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>/</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <Language>ar-EG</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=System.Convert.ToDateTime(First(Fields!FDATE.Value, "dsPassPermission")).Month</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <Language>ar-EG</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>/</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <Language>ar-EG</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=System.Convert.ToDateTime(First(Fields!FDATE.Value, "dsPassPermission")).day</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <Language>ar-EG</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>م</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <Language>ar-EG</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>1.14583in</Top>
+        <Left>0.635cm</Left>
+        <Height>0.38542in</Height>
+        <Width>2.53558in</Width>
+        <ZIndex>13</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Tablix Name="Tablix2">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>6.75in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.15748in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Sirs">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Code.ToArabicNumber(Fields!Sirs.Value)</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Sirs</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>0cm</PaddingLeft>
+                        <PaddingRight>0cm</PaddingRight>
+                        <PaddingTop>0cm</PaddingTop>
+                        <PaddingBottom>0cm</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="Details1" />
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>dsSirs</DataSetName>
+        <Top>5.84042in</Top>
+        <Left>1.905cm</Left>
+        <Height>0.15748in</Height>
+        <Width>6.75in</Width>
+        <ZIndex>14</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>5.9979in</Height>
+    <Style />
+  </Body>
+  <Code>Public Function ToArabicNumber(input As String) As String
+    Dim output As String
+
+    output = input.Replace("1","١")
+    output = output.Replace("2","٢")
+    output = output.Replace("3","٣")
+    output = output.Replace("4","٤")
+    output = output.Replace("5","٥")
+    output = output.Replace("6","٦")
+    output = output.Replace("7","٧")
+    output = output.Replace("8","٨")
+    output = output.Replace("9","٩")
+    output = output.Replace("0","٠")
+
+    Return output
+End Function</Code>
+  <Width>7.52083in</Width>
+  <Page>
+    <LeftMargin>1cm</LeftMargin>
+    <RightMargin>1cm</RightMargin>
+    <TopMargin>1cm</TopMargin>
+    <Style />
+  </Page>
+  <EmbeddedImages>
+    <EmbeddedImage Name="watermark">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportID>7ac8cabb-8796-4644-b546-001bb9035b85</rd:ReportID>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+</Report>

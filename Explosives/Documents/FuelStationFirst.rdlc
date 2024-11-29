@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="dsExplosives">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>e9a8f46b-2c7a-4653-9071-b95a8291768f</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="dsFuelStation">
+      <Fields>
+        <Field Name="FuelStationID">
+          <DataField>FuelStationID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Company">
+          <DataField>Company</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Representitive">
+          <DataField>Representitive</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PermissionDate">
+          <DataField>PermissionDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CompanyLetterDate">
+          <DataField>CompanyLetterDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="State">
+          <DataField>State</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="City">
+          <DataField>City</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Land">
+          <DataField>Land</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Block">
+          <DataField>Block</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Rank">
+          <DataField>Rank</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Position">
+          <DataField>Position</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Township">
+          <DataField>Township</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>dsExplosives</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>dsExplosives</rd:DataSetName>
+        <rd:SchemaPath>E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\dsExplosives.xsd</rd:SchemaPath>
+        <rd:TableName>FuelStations</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>FuelStationsTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Body>
+    <ReportItems>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>بسم الله الرحمن الرحيم</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Height>0.41667in</Height>
+        <Width>6.5in</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox3">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>السيد/ مدير الادارة العامة للمنشآت النفطية</Value>
+                <Style>
+                  <FontSize>16pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>2.22583in</Top>
+        <Left>3.15625in</Left>
+        <Height>0.34375in</Height>
+        <Width>3.34375in</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox4">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>السلام عليكم ورحمة الله وبركاته</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>2.59736in</Top>
+        <Left>3.15625in</Left>
+        <Height>0.34375in</Height>
+        <Width>3.34375in</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox5">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>الموضوع : انشاء محطة خدمة بترولية</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>3.20312in</Top>
+        <Height>0.34375in</Height>
+        <Width>6.5in</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox6">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>١- بالاشارة الى خطاب </Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!Company.Value, "dsFuelStation")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> نفيدكم بأنه لا مانع لدينا من انشاء محطة خدمة بترولية بولاية  </Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!State.Value, "dsFuelStation")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> محلية </Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!Township.Value, "dsFuelStation")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> منطقة  </Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!City.Value, "dsFuelStation")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>بالقطعة رقم (</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Code.ToArabicNumber(First(Fields!Land.Value, "dsFuelStation"))</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>) مربع (</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Code.ToArabicNumber(First(Fields!Block.Value, "dsFuelStation"))</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>) باسم السيد/ </Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!Representitive.Value, "dsFuelStation")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> وكيلا عن شركة </Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!Company.Value, "dsFuelStation")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>.</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>٢- مرسل اليكم عدد (٦) نسخ من الكروكي بعد التصديق عليه من هذا الطرف.</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>٣- يرجى ان تصلنا خرط الوضع والبناء والتصميم للتصديق عليها قبل الشروع في التنفيذ.</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>٤- ولكم منا فائق الشكر والتقدير.</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>3.77792in</Top>
+        <Height>1.47917in</Height>
+        <Width>6.5in</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox7">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Rank.Value, "dsFuelStation")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Name.Value, "dsFuelStation")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Position.Value, "dsFuelStation")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox7</rd:DefaultName>
+        <Top>6.42375in</Top>
+        <Height>0.75in</Height>
+        <Width>2.60417in</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox9">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>نسخة الى:</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox9</rd:DefaultName>
+        <Top>7.59736in</Top>
+        <Left>5.5in</Left>
+        <Height>0.25in</Height>
+        <Width>1in</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox8">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>- السيد/ مدير </Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>- السيد/ مدير الادارة العامة للمنشآت النفطية</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox7</rd:DefaultName>
+        <Top>7.9168in</Top>
+        <Height>0.53125in</Height>
+        <Width>6.27083in</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <NumeralLanguage>ar-EG</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>هـــــيــــــئــــــة الأركــــان إمـــــداد</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <NumeralLanguage>ar-EG</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>ســــلاح الأسلــحة والذخائر / الكدرو</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <NumeralLanguage>ar-EG</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>مكتب مفتش عـــام مفرقعات السودان</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <NumeralLanguage>ar-EG</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>النمرة : مفرقعات / ١/أ/١/_____</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <NumeralLanguage>ar-EG</NumeralLanguage>
+                  <NumeralVariant>3</NumeralVariant>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>        :</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Code.StretchArabicMonth(Code.ToArabicNumber(System.Convert.ToDateTime(First(Fields!PermissionDate.Value, "dsFuelStation")).ToString("MMMMM yyy",System.Globalization.CultureInfo.CreateSpecificCulture("ar"))))</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Language>ar-SA</Language>
+                  <NumeralLanguage>ar-SA</NumeralLanguage>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>هـ</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>        :</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Format>MMMM yyy</Format>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Code.StretchEnglishMonth(Code.ToArabicNumber(System.Convert.ToDateTime(First(Fields!PermissionDate.Value, "dsFuelStation")).ToString("MMMMM yyy",System.Globalization.CultureInfo.CreateSpecificCulture("ar-EG"))))</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Format>MMMM yyy</Format>
+                  <Language>ar-EG</Language>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>م</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Format>MMMM yyy</Format>
+                  <Language>ar-EG</Language>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>0.41667in</Top>
+        <Height>1.70486in</Height>
+        <Width>2.32292in</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox11">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Company.Value, "dsFuelStation")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>7.9168in</Top>
+        <Left>1.65292in</Left>
+        <Height>0.27083in</Height>
+        <Width>3.75in</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>8.44805in</Height>
+    <Style />
+  </Body>
+  <Code>
+Public Function ToArabicNumber(input As String) As String
+    Dim output As String
+
+    output = input.Replace("1","١")
+    output = output.Replace("2","٢")
+    output = output.Replace("3","٣")
+    output = output.Replace("4","٤")
+    output = output.Replace("5","٥")
+    output = output.Replace("6","٦")
+    output = output.Replace("7","٧")
+    output = output.Replace("8","٨")
+    output = output.Replace("9","٩")
+    output = output.Replace("0","٠")
+
+    Return output
+End Function
+Public Function StretchArabicMonth(input As String) As String
+    Dim output As String
+
+    output = input.Replace("ربيع الأول","ربــــيــــــع الأول")
+    output = output.Replace("شعبان","شـــــعـــــــبــــان")
+    output = output.Replace("ربيع الثاني","ربــــيــــع الثـاني")
+    output = output.Replace("رجب","رجـــــــــــــــــــب")
+    output = output.Replace("شوال","شــــــــــــــــــوال")
+    output = output.Replace("رمضان","رمــــــــضـــــــان")
+    output = output.Replace("صفر","صــــــــفـــــــــــر")
+    output = output.Replace("محرم","مـــــــــحـــــــــرم")
+    output = output.Replace("جمادي الأولى","جــمـــادي الأولى")
+    output = output.Replace("جمادي الثانية","جـمـادي الثــانية")
+    output = output.Replace("ذو القعدة","ذو الـــــقــــعــــدة")
+    output = output.Replace("ذو الحجة","ذو الـــــحــــجـــة")
+    Return output
+End Function
+Public Function StretchEnglishMonth(input As String) As String
+    Dim output As String
+
+    output = input.Replace("يناير","يــــــنــــــايـــــــر")
+    output = output.Replace("فبراير","فــــــبـــــرايـــــر")
+    output = output.Replace("مارس","مــــــــــــــــارس")
+    output = output.Replace("أبريل","أبــــــــريـــــــــل")
+    output = output.Replace("مايو","مـــــــــــايــــــــو")
+    output = output.Replace("يونيو","يــــــــونـــــــيــو")
+    output = output.Replace("يوليو","يـــــــولــــــيــــو")
+    output = output.Replace("أغسطس","أغـــــســطــــس")
+    output = output.Replace("سبتمبر","ســبـــتـــمـــبــر")
+    output = output.Replace("أكتوبر","نــــوفـــــمــــبـر")
+    output = output.Replace("نوفمبر","نــــوفـــــمــــبـر")
+    output = output.Replace("ديسمبر","ديــــســـمــــبــر")
+    Return output
+End Function</Code>
+  <Width>6.5in</Width>
+  <Page>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>1cm</TopMargin>
+    <BottomMargin>1in</BottomMargin>
+    <Style />
+  </Page>
+  <rd:ReportID>8c553273-7091-4f27-b10d-c02fc396af70</rd:ReportID>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+</Report>

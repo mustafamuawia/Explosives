@@ -1,0 +1,130 @@
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\bin\Debug\Explosives.exe.config
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\bin\Debug\Explosives.pdb
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\bin\Debug\Explosives.xml
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\bin\Debug\QRCoder.dll
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.vbprojResolveAssemblyReference.cache
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintAmmo.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintFinance.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintFireworksStore.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintFireworkSell.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintFuelStationFirst.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintFuelStationSecond.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintGasCenter.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintGasDepot.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintGasDepotSecond.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintImportPermission.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintMovementForm.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintNoObjection.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmprintPassPermission.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintWorkPermission.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmAccounts.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmAmmo.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmBalance.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmCheck.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmClasses.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmCondtions0.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmFinance.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmFireworks.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmFireworksRequests.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmFuelStation.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmGasCenter.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmGasDepot.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmImportAllowed.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmImportPermissions.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmInsert.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmLogin.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmMain.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmConditions.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmMovementForms.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmNoObjections.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmOurDistract.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmOurImport.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmPassCopies.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmPassPermissions.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmSearchOurDistract.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmSearchPassPermission.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmWorkAllowed.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmWorkCopies.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmWorkPermissions.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.Resources.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmrptWorkPermissions.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.vbproj.GenerateResource.Cache
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\RdlCompile.cache
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\RdlCompile.compiled
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.exe
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.xml
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.pdb
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmSearchImportPermission.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmDatabaseSettings.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmrptOurDistract.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmrptPassPermission.resources
+E:\Projects\explosives converted\ExplosivesNew\Explosives\Explosives\obj\x86\Debug\Explosives.frmTeams.resources
+C:\Explosives\Explosives\bin\Debug\Explosives.exe.config
+C:\Explosives\Explosives\obj\x86\Debug\Explosives.exe
+C:\Explosives\Explosives\obj\x86\Debug\Explosives.xml
+C:\Explosives\Explosives\obj\x86\Debug\Explosives.pdb
+E:\just\Explosives\Explosives\bin\Debug\Explosives.exe.config
+E:\just\Explosives\Explosives\obj\x86\Debug\Explosives.exe
+E:\just\Explosives\Explosives\obj\x86\Debug\Explosives.xml
+E:\just\Explosives\Explosives\obj\x86\Debug\Explosives.pdb
+E:\Projects\Explosives\Explosives\bin\Debug\Explosives.exe.config
+E:\Projects\Explosives\Explosives\bin\Debug\Explosives.pdb
+E:\Projects\Explosives\Explosives\bin\Debug\Explosives.xml
+E:\Projects\Explosives\Explosives\bin\Debug\QRCoder.dll
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.vbprojResolveAssemblyReference.cache
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintAmmo.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintFinance.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintFireworksStore.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintFireworkSell.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintFuelStationFirst.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintFuelStationSecond.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintGasCenter.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintGasDepot.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintGasDepotSecond.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintImportPermission.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintMovementForm.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintNoObjection.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmprintPassPermission.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmPrintWorkPermission.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmAccounts.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmAmmo.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmBalance.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmCheck.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmClasses.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmCondtions0.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmDatabaseSettings.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmFinance.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmFireworks.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmFireworksRequests.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmFuelStation.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmGasCenter.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmGasDepot.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmImportAllowed.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmImportPermissions.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmInsert.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmLogin.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmMain.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmConditions.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmMovementForms.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmNoObjections.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmOurDistract.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmOurImport.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmPassCopies.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmPassPermissions.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmSearchImportPermission.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmSearchOurDistract.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmSearchPassPermission.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmTeams.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmWorkAllowed.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmWorkCopies.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmWorkPermissions.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.Resources.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmrptOurDistract.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmrptPassPermission.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.frmrptWorkPermissions.resources
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.vbproj.GenerateResource.Cache
+E:\Projects\Explosives\Explosives\obj\x86\Debug\RdlCompile.cache
+E:\Projects\Explosives\Explosives\obj\x86\Debug\RdlCompile.compiled
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.exe
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.xml
+E:\Projects\Explosives\Explosives\obj\x86\Debug\Explosives.pdb

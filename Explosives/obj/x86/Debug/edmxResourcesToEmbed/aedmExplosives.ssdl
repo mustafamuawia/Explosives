@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="explosivesModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="explosivesModelStoreContainer">
+    <EntitySet Name="Accounts" EntityType="explosivesModel.Store.Accounts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CONDNAMES" EntityType="explosivesModel.Store.CONDNAMES" store:Type="Tables" store:Schema="dbo" store:Name="CONDNAMES">
+      <DefiningQuery>SELECT 
+      [CONDNAMES].[ID] AS [ID], 
+      [CONDNAMES].[NAME] AS [NAME]
+      FROM [dbo].[CONDNAMES] AS [CONDNAMES]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DISTRACTCLASS" EntityType="explosivesModel.Store.DISTRACTCLASS" store:Type="Tables" store:Schema="dbo" store:Name="DISTRACTCLASS">
+      <DefiningQuery>SELECT 
+      [DISTRACTCLASS].[AMMOUNT] AS [AMMOUNT], 
+      [DISTRACTCLASS].[CLASS] AS [CLASS], 
+      [DISTRACTCLASS].[FID] AS [FID], 
+      [DISTRACTCLASS].[CLASSID] AS [CLASSID], 
+      [DISTRACTCLASS].[RECEIVER] AS [RECEIVER], 
+      [DISTRACTCLASS].[DISTRACTOR] AS [DISTRACTOR], 
+      [DISTRACTCLASS].[RECORD] AS [RECORD], 
+      [DISTRACTCLASS].[ACCOUNT] AS [ACCOUNT], 
+      [DISTRACTCLASS].[DISTDATE] AS [DISTDATE], 
+      [DISTRACTCLASS].[UNIT] AS [UNIT]
+      FROM [dbo].[DISTRACTCLASS] AS [DISTRACTCLASS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="IMPORTCLASS" EntityType="explosivesModel.Store.IMPORTCLASS" store:Type="Tables" store:Schema="dbo" store:Name="IMPORTCLASS">
+      <DefiningQuery>SELECT 
+      [IMPORTCLASS].[AMMOUNT] AS [AMMOUNT], 
+      [IMPORTCLASS].[CLASS] AS [CLASS], 
+      [IMPORTCLASS].[UNIT] AS [UNIT], 
+      [IMPORTCLASS].[FID] AS [FID], 
+      [IMPORTCLASS].[CLASSID] AS [CLASSID], 
+      [IMPORTCLASS].[RECEIVER] AS [RECEIVER], 
+      [IMPORTCLASS].[DISTRACTOR] AS [DISTRACTOR], 
+      [IMPORTCLASS].[RECORD] AS [RECORD], 
+      [IMPORTCLASS].[ACCOUNT] AS [ACCOUNT], 
+      [IMPORTCLASS].[DISTDATE] AS [DISTDATE], 
+      [IMPORTCLASS].[BALANCED] AS [BALANCED]
+      FROM [dbo].[IMPORTCLASS] AS [IMPORTCLASS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="IMPORTPERMISSIONS" EntityType="explosivesModel.Store.IMPORTPERMISSIONS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Security" EntityType="explosivesModel.Store.Security" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Accounts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ACCOUNT" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'explosives.dbo.CONDNAMES' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="CONDNAMES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="NAME" Type="varchar" MaxLength="40" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'explosives.dbo.DISTRACTCLASS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="DISTRACTCLASS">
+    <Key>
+      <PropertyRef Name="DISTRACTOR" />
+    </Key>
+    <Property Name="AMMOUNT" Type="numeric" Precision="10" />
+    <Property Name="CLASS" Type="nvarchar" MaxLength="35" />
+    <Property Name="FID" Type="nvarchar" MaxLength="15" />
+    <Property Name="CLASSID" Type="nvarchar" MaxLength="20" />
+    <Property Name="RECEIVER" Type="nvarchar" MaxLength="50" />
+    <Property Name="DISTRACTOR" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="RECORD" Type="nvarchar" MaxLength="50" />
+    <Property Name="ACCOUNT" Type="nvarchar" MaxLength="15" />
+    <Property Name="DISTDATE" Type="date" />
+    <Property Name="UNIT" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'explosives.dbo.IMPORTCLASS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="IMPORTCLASS">
+    <Key>
+      <PropertyRef Name="CLASSID" />
+    </Key>
+    <Property Name="AMMOUNT" Type="decimal" Precision="10" />
+    <Property Name="CLASS" Type="nvarchar" MaxLength="35" />
+    <Property Name="UNIT" Type="nvarchar" MaxLength="15" />
+    <Property Name="FID" Type="int" />
+    <Property Name="CLASSID" Type="int" Nullable="false" />
+    <Property Name="RECEIVER" Type="nvarchar" MaxLength="50" />
+    <Property Name="DISTRACTOR" Type="nvarchar" MaxLength="50" />
+    <Property Name="RECORD" Type="nvarchar" MaxLength="15" />
+    <Property Name="ACCOUNT" Type="nvarchar" MaxLength="20" />
+    <Property Name="DISTDATE" Type="date" />
+    <Property Name="BALANCED" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="IMPORTPERMISSIONS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FDATE" Type="date" />
+    <Property Name="SID" Type="nvarchar" MaxLength="20" />
+    <Property Name="SDATE" Type="date" />
+    <Property Name="PERMITTED" Type="nvarchar" MaxLength="80" />
+    <Property Name="CRAFTSMANSHIP" Type="nvarchar" MaxLength="50" />
+    <Property Name="ADDRESS" Type="nvarchar" MaxLength="100" />
+    <Property Name="PORT" Type="nvarchar" MaxLength="30" />
+    <Property Name="EXPLOSIVESID" Type="nvarchar" MaxLength="100" />
+    <Property Name="POINT1" Type="nvarchar" MaxLength="15" />
+    <Property Name="POINT2" Type="nvarchar" MaxLength="15" />
+    <Property Name="POINT3" Type="nvarchar" MaxLength="15" />
+    <Property Name="RANK" Type="nvarchar" MaxLength="15" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="POSITION" Type="nvarchar" MaxLength="80" />
+    <Property Name="NOOBJECTIONID" Type="nvarchar" MaxLength="50" />
+    <Property Name="FINANCEID" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Security">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="Rank" Type="nvarchar" MaxLength="50" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Unit" Type="nvarchar" MaxLength="50" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6013: The table/view 'explosives.dbo.Conditions' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="Conditions">
+        <Property Name="Name" Type="nvarchar" MaxLength="50" />
+        <Property Name="Condition" Type="nvarchar" MaxLength="70" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'explosives.dbo.FINANCE' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="FINANCE">
+        <Property Name="ID" Type="int" />
+        <Property Name="MONEYIN" Type="decimal" Precision="10" />
+        <Property Name="MONEYTEXT" Type="nvarchar" MaxLength="60" />
+        <Property Name="CERTIFIER" Type="nvarchar" MaxLength="60" />
+        <Property Name="SIDENAME" Type="nvarchar" MaxLength="60" />
+        <Property Name="COME" Type="nvarchar" MaxLength="60" />
+        <Property Name="RECEIVEE" Type="nvarchar" MaxLength="60" />
+        <Property Name="RECEIVER" Type="nvarchar" MaxLength="60" />
+        <Property Name="STATION" Type="nvarchar" MaxLength="60" />
+        <Property Name="FDATE" Type="date" />
+        <Property Name="EXPLANATION" Type="nvarchar" MaxLength="60" />
+        <Property Name="STATUS" Type="nvarchar" MaxLength="60" />
+        <Property Name="NOTES" Type="nvarchar" MaxLength="60" />
+        <Property Name="MONEYOUT" Type="decimal" />
+        <Property Name="STATUSID" Type="decimal" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'explosives.dbo.PERMISSIONS' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="PERMISSIONS">
+        <Property Name="ID" Type="int" />
+        <Property Name="FID" Type="nvarchar" MaxLength="20" />
+        <Property Name="PLACE" Type="nvarchar" MaxLength="20" />
+        <Property Name="FDATE" Type="date" />
+        <Property Name="LICENSEID" Type="nvarchar" MaxLength="20" />
+        <Property Name="SENDER" Type="nvarchar" MaxLength="20" />
+        <Property Name="SENDERADDRESS" Type="nvarchar" MaxLength="60" />
+        <Property Name="RECEIVERADDRESS" Type="nvarchar" MaxLength="60" />
+        <Property Name="POINT1" Type="nvarchar" MaxLength="20" />
+        <Property Name="POINT2" Type="nvarchar" MaxLength="20" />
+        <Property Name="POINT3" Type="nvarchar" MaxLength="20" />
+        <Property Name="TRANSPORTEDBY" Type="nvarchar" MaxLength="15" />
+        <Property Name="TOSTORE" Type="nvarchar" MaxLength="20" />
+        <Property Name="STOREID" Type="nvarchar" MaxLength="20" />
+        <Property Name="FFROM" Type="date" />
+        <Property Name="FTO" Type="date" />
+        <Property Name="STOREDATE" Type="date" />
+        <Property Name="CLASS" Type="nvarchar(max)" />
+        <Property Name="RECEIVER" Type="nvarchar" MaxLength="50" />
+        <Property Name="AMMOUNT" Type="nvarchar(max)" />
+        <Property Name="UNIT" Type="nvarchar(max)" />
+        <Property Name="RANK" Type="nvarchar" MaxLength="20" />
+        <Property Name="NAME" Type="nvarchar" MaxLength="80" />
+        <Property Name="POSITION" Type="nvarchar" MaxLength="60" />
+        <Property Name="FINANCEID" Type="nvarchar" MaxLength="10" />
+        <Property Name="FYEAR" Type="nvarchar" MaxLength="4" />
+        <Property Name="PURPOSE" Type="nvarchar" MaxLength="50" />
+        <Property Name="WORKPERMISSION" Type="nvarchar" MaxLength="30" />
+      </EntityType>-->
+</Schema>

@@ -1,0 +1,740 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Explosives
+</name>
+</assembly>
+<members>
+<member name="T:Explosives.dsExplosives.SecurityDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.Accounts_Imported_DistractedDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.AccountsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.BalanceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.ConditionsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.FINANCEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.IMPORTPERMISSIONSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.NOOBJECTIONSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.WORKALLOWEDDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.IMPORTALLOWEDDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.PERMISSIONSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.PermissionDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.FINANCEYEARDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.FuelStationsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.StatesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.TownshipsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.PermissionNamesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.PermissionsCopiesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.GasCentersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.AmmoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.FireworksDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.FinanceDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.NoObjectionDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.WORKPERMISSIONSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.CLASSESDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.GasDepotsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.OURDISTRACTDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.OurDistractDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.PassCopiesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.PassCopiesDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.WorkCopiesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.WorkCopiesDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.MovementFormsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.MovementFormDetialsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.OURIMPORTDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.OurImportDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.RecentClassesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.FireworksRequestDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.FireworksRequestsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.ImportPermissionDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.TeamsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.SecurityRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.Accounts_Imported_DistractedRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.AccountsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.BalanceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.ConditionsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.FINANCERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.IMPORTPERMISSIONSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.NOOBJECTIONSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.WORKALLOWEDRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.IMPORTALLOWEDRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.PERMISSIONSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.PermissionDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.FINANCEYEARRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.FuelStationsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.StatesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.TownshipsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.PermissionNamesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.PermissionsCopiesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.GasCentersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.AmmoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.FireworksRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.FinanceDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.NoObjectionDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.WORKPERMISSIONSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.CLASSESRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.GasDepotsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.OURDISTRACTRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.OurDistractDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.PassCopiesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.PassCopiesDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.WorkCopiesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.WorkCopiesDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.MovementFormsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.MovementFormDetialsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.OURIMPORTRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.OurImportDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.RecentClassesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.FireworksRequestDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.FireworksRequestsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.ImportPermissionDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.TeamsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Explosives.dsExplosives.SecurityRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.Accounts_Imported_DistractedRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.AccountsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.BalanceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.ConditionsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.FINANCERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.IMPORTPERMISSIONSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.NOOBJECTIONSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.WORKALLOWEDRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.IMPORTALLOWEDRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.PERMISSIONSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.PermissionDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.FINANCEYEARRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.FuelStationsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.StatesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.TownshipsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.PermissionNamesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.PermissionsCopiesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.GasCentersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.AmmoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.FireworksRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.FinanceDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.NoObjectionDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.WORKPERMISSIONSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.CLASSESRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.GasDepotsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.OURDISTRACTRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.OurDistractDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.PassCopiesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.PassCopiesDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.WorkCopiesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.WorkCopiesDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.MovementFormsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.MovementFormDetialsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.OURIMPORTRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.OurImportDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.RecentClassesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.FireworksRequestDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.FireworksRequestsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.ImportPermissionDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives.TeamsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Explosives.dsExplosives">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.SecurityTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.Accounts_Imported_DistractedTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.AccountsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.BalanceTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.ConditionsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.FINANCETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.IMPORTPERMISSIONSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.NOOBJECTIONSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.WORKALLOWEDTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.IMPORTALLOWEDTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.PERMISSIONSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.PermissionDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.FINANCEYEARTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.FuelStationsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.StatesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.TownshipsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.PermissionNamesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.PermissionsCopiesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.GasCentersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.AmmoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.FireworksTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.FinanceDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.NoObjectionDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.WORKPERMISSIONSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.CLASSESTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.GasDepotsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.OURDISTRACTTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.OurDistractDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.PassCopiesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.PassCopiesDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.WorkCopiesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.WorkCopiesDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.MovementFormsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.MovementFormDetialsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.OURIMPORTTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.OurImportDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.RecentClassesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.FireworksRequestDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.FireworksRequestsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.ImportPermissionDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.TeamsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Explosives.dsExplosivesTableAdapters.TableAdapterManager.UpdateUpdatedRows(Explosives.dsExplosives,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Explosives.dsExplosivesTableAdapters.TableAdapterManager.UpdateInsertedRows(Explosives.dsExplosives,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Explosives.dsExplosivesTableAdapters.TableAdapterManager.UpdateDeletedRows(Explosives.dsExplosives,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Explosives.dsExplosivesTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Explosives.dsExplosivesTableAdapters.TableAdapterManager.UpdateAll(Explosives.dsExplosives)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Explosives.dsExplosivesTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:Explosives.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Explosives.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Explosives.My.Resources.Resources.bomb">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Explosives.My.Resources.Resources.bomb1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Explosives.My.Resources.Resources.bombred">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Explosives.My.Resources.Resources.login">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Explosives.My.Resources.Resources.logo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Explosives.My.Resources.Resources.صقر_الجديان">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:Explosives.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

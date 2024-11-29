@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="explosivesModelStoreContainer" CdmEntityContainer="explosivesEntities">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="explosivesModel.Account">
+        <MappingFragment StoreEntitySet="Accounts">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ACCOUNT1" ColumnName="ACCOUNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONDNAMES">
+      <EntityTypeMapping TypeName="explosivesModel.CONDNAME">
+        <MappingFragment StoreEntitySet="CONDNAMES">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DISTRACTCLASSes">
+      <EntityTypeMapping TypeName="explosivesModel.DISTRACTCLASS">
+        <MappingFragment StoreEntitySet="DISTRACTCLASS">
+          <ScalarProperty Name="AMMOUNT" ColumnName="AMMOUNT" />
+          <ScalarProperty Name="CLASS" ColumnName="CLASS" />
+          <ScalarProperty Name="FID" ColumnName="FID" />
+          <ScalarProperty Name="CLASSID" ColumnName="CLASSID" />
+          <ScalarProperty Name="RECEIVER" ColumnName="RECEIVER" />
+          <ScalarProperty Name="DISTRACTOR" ColumnName="DISTRACTOR" />
+          <ScalarProperty Name="RECORD" ColumnName="RECORD" />
+          <ScalarProperty Name="ACCOUNT" ColumnName="ACCOUNT" />
+          <ScalarProperty Name="DISTDATE" ColumnName="DISTDATE" />
+          <ScalarProperty Name="UNIT" ColumnName="UNIT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IMPORTCLASSes">
+      <EntityTypeMapping TypeName="explosivesModel.IMPORTCLASS">
+        <MappingFragment StoreEntitySet="IMPORTCLASS">
+          <ScalarProperty Name="AMMOUNT" ColumnName="AMMOUNT" />
+          <ScalarProperty Name="CLASS" ColumnName="CLASS" />
+          <ScalarProperty Name="UNIT" ColumnName="UNIT" />
+          <ScalarProperty Name="FID" ColumnName="FID" />
+          <ScalarProperty Name="CLASSID" ColumnName="CLASSID" />
+          <ScalarProperty Name="RECEIVER" ColumnName="RECEIVER" />
+          <ScalarProperty Name="DISTRACTOR" ColumnName="DISTRACTOR" />
+          <ScalarProperty Name="RECORD" ColumnName="RECORD" />
+          <ScalarProperty Name="ACCOUNT" ColumnName="ACCOUNT" />
+          <ScalarProperty Name="DISTDATE" ColumnName="DISTDATE" />
+          <ScalarProperty Name="BALANCED" ColumnName="BALANCED" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IMPORTPERMISSIONS">
+      <EntityTypeMapping TypeName="explosivesModel.IMPORTPERMISSION">
+        <MappingFragment StoreEntitySet="IMPORTPERMISSIONS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FDATE" ColumnName="FDATE" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="SDATE" ColumnName="SDATE" />
+          <ScalarProperty Name="PERMITTED" ColumnName="PERMITTED" />
+          <ScalarProperty Name="CRAFTSMANSHIP" ColumnName="CRAFTSMANSHIP" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="PORT" ColumnName="PORT" />
+          <ScalarProperty Name="EXPLOSIVESID" ColumnName="EXPLOSIVESID" />
+          <ScalarProperty Name="POINT1" ColumnName="POINT1" />
+          <ScalarProperty Name="POINT2" ColumnName="POINT2" />
+          <ScalarProperty Name="POINT3" ColumnName="POINT3" />
+          <ScalarProperty Name="RANK" ColumnName="RANK" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="POSITION" ColumnName="POSITION" />
+          <ScalarProperty Name="NOOBJECTIONID" ColumnName="NOOBJECTIONID" />
+          <ScalarProperty Name="FINANCEID" ColumnName="FINANCEID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Securities">
+      <EntityTypeMapping TypeName="explosivesModel.Security">
+        <MappingFragment StoreEntitySet="Security">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

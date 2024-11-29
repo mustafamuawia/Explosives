@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="explosivesModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="explosivesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Accounts" EntityType="explosivesModel.Account" />
+    <EntitySet Name="CONDNAMES" EntityType="explosivesModel.CONDNAME" />
+    <EntitySet Name="DISTRACTCLASSes" EntityType="explosivesModel.DISTRACTCLASS" />
+    <EntitySet Name="IMPORTCLASSes" EntityType="explosivesModel.IMPORTCLASS" />
+    <EntitySet Name="IMPORTPERMISSIONS" EntityType="explosivesModel.IMPORTPERMISSION" />
+    <EntitySet Name="Securities" EntityType="explosivesModel.Security" />
+  </EntityContainer>
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ACCOUNT1" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="CONDNAME">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="DISTRACTCLASS">
+    <Key>
+      <PropertyRef Name="DISTRACTOR" />
+    </Key>
+    <Property Name="AMMOUNT" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="CLASS" Type="String" MaxLength="35" Unicode="true" FixedLength="false" />
+    <Property Name="FID" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="CLASSID" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="RECEIVER" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="DISTRACTOR" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="RECORD" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ACCOUNT" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="DISTDATE" Type="DateTime" />
+    <Property Name="UNIT" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="IMPORTCLASS">
+    <Key>
+      <PropertyRef Name="CLASSID" />
+    </Key>
+    <Property Name="AMMOUNT" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="CLASS" Type="String" MaxLength="35" Unicode="true" FixedLength="false" />
+    <Property Name="UNIT" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="FID" Type="Int32" />
+    <Property Name="CLASSID" Type="Int32" Nullable="false" />
+    <Property Name="RECEIVER" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="DISTRACTOR" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="RECORD" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="ACCOUNT" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="DISTDATE" Type="DateTime" />
+    <Property Name="BALANCED" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="IMPORTPERMISSION">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FDATE" Type="DateTime" />
+    <Property Name="SID" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="SDATE" Type="DateTime" />
+    <Property Name="PERMITTED" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+    <Property Name="CRAFTSMANSHIP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ADDRESS" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="PORT" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="EXPLOSIVESID" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="POINT1" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="POINT2" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="POINT3" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="RANK" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="NAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="POSITION" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+    <Property Name="NOOBJECTIONID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FINANCEID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Security">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Rank" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FullName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Unit" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+</Schema>
